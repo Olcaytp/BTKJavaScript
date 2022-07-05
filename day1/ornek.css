@@ -1,0 +1,18 @@
+body{
+    background-color: aquamarine;
+}
+/* içiçe tag lerin css tanımı ve iç tag in id sine de bitişiğine 
+#işareti konarak ulaşılır.   */
+body div#DenemeSatiri1 {
+    color: brown;
+}
+body div#DenemeSatiri2 {
+    color: rgb(24, 21, 197);
+}
+/* direk id ye # işareti de ulaşılarak css tanımlanabilir*/
+#DenemeSatiri3 {
+    color: burlywood;
+}
+#DenemeSatiri4 {
+    color: chartreuse;
+}
