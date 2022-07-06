@@ -1,0 +1,79 @@
+<!-- eklenen yapının kısayol etiketi ==> "! + enter"-->
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ornek.css">
+    <script src="ornek.js"></script>
+</head>
+<body>
+    <h1>=========================>DAY 2<==============================</h1>
+    <!--Chrome'da settings/Privacy and security/JavaScript/Default Behavior sekmesinde "Sites can use JavaScript"  yazması çok önemli. 
+      Eğer yazmıyorsa belirtilen adresten yazmasını sağlamalısınız.Aksi takdirde çalıştırmak istediğiniz kodlar düzgün çalışmayacaktır. 
+    -->
+    <noscript>JavaScript in kullanılması pasif durumdadır!!</noscript>
+    <script>
+      //Kod Blokları Kullanımı
+  {
+    {
+      {
+        {
+          //Bu şekilde "indentation" a dikkat etmek lazım
+        }
+      }
+    }
+  }
+  //--------------------------------------------------------------------------------------------
+  var isim      = "Olcay";
+  var soyisim   = "Tapan";
+  var eğitim    = "Ahmet    Yesevi Üniversitesi";
+  var yas       = 30;
+  //JS de white space karakterler de tanınır özellikle birden fazla olsa bile 
+  //görüntülenir php ve asp.net in aksine
+  //alert(yas) 
+  //alert ()       = Sayfa içerisinde uyarı pencersei açar.Belirtilen uyarıyı ekranda gösterir.
+  //window.alert() = Sayfa içerisinde uyarı pencersei açar.Belirtilen uyarıyı ekranda gösterir.
+  //(Nesnesel olarak bu işlemi yapar.BOM-> browser object model i kullanır.)
+  //window.alert(isim)
+  //----------------------------------------------------------------------------------------
+  
+  //document.write()   = Dökümana çıktı verir.(nesnesel-Dom->Document Object Model)
+  //document.writeln() = Dökümana çıktı verir. Satırbaşı yapar(nesnesel-Dom)
+  
+  document.write("1-Hello        ");
+  document.writeln("2-there!")
+  document.writeln("3-How are you?")
+  document.write("1-Hello");
+  //bu şekilde yazdığımızda tarayıcıda 3 nolu cümlenin satır başı yapmasını bekleriz.
+  //Ama beklediğimiz gibi olmuyor.olması için html de pre tagını kullanırız.Ama bu tag biraz
+  //html düzenini de bozuyor(hemen body tagından sonra kullanınca, yani body tagının içindeki
+  //tüm tag ları kapsayınca) gibi. Yukarıdaki yazdıklarımı tarayıcıda olduğu gibi açarsanız ne demek 
+  //istediğimi anlayacaksınız.
+  //Bu yüzden pre tagını sadece documentwrite ları içine alacak şekilde deniyoruz.
+  //her şekilde bozduğu için ayrı bir scriipti  içine alacak şekilde denedim.    
+    </script>
+    <pre>
+      <script>
+        document.write("1-Hello     ");
+        document.writeln("2-there!");
+        document.writeln("3-How are you?");
+        document.write("1-Hello");
+    </script>
+<!--pre tagı garip bir şekilde yazıları küçültüyor ve indentaion ı bozuyor.-->
+    <!--Buraya da internetten bir tanımlama bırakıyorum ;
+    HTML <PRE> etiketi, içeriğinde beyaz boşluk olarak ifade edilen, boşluk, sekme (tab) ve satır sonu 
+      gibi karakterlerin korunarak, karakterlerin sabit genişlikte gösterilmesini sağlar.Tarayıcı,
+       diğer etiketlerin içeriğini yorumlarken beyaz boşlukların miktarını ya 1'e indirir ya da temizler. 
+       Fakat PRE etiketi içeriğindeki beyaz boşlukları gözardı ederek tekrar düzenlemez.-->
+  
+    </pre>
+    <script>
+      //console.log() kullanımı bize browserda kullanıcının görmediği inspect ksımındaki console sekmesinde
+      //değerler görmemizi sağlayan bir komuttur.
+      console.log("tarayıcıda sağ tıklayıp inspect diyerek developer tools u açıyoruz sonra console sekmesine gidiyoruz");
+    </script>
+      </body>
+</html>
