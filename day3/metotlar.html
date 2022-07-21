@@ -55,6 +55,14 @@
         document.write(typeof(bir) + ": " + bir + "<br/>");
         var yenibir = String(bir);
         document.write(typeof(yenibir)+ ": " + yenibir +"<br/>")
+
+        document.write("--------------------------------------------------------------------"+ "<br/>");
+        //settimeout(): Belge içerisinde tanımlanan herhangi bir kodlamayı belirtilen süre sonunda 
+        //sadece bir defa olmak üzere çalıştırmak için kullanılır.
+        
+        function ornek(){ 
+        alert ( "5 saniye süreniz doldu");} 
+        setTimeout(ornek,5000);
     
     </script>
 </body>

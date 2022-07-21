@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <style>
+        .container{
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+        .dice{
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
+        }
+        body{
+            background-color: rgb(217, 248, 238);
+            margin: 0;
+        }
+        h1{
+            margin: 10px;
+            font-family: "Lobster", cursive;
+            text-shadow: 1px 2px #f70c52;
+            font-size: 4.5rem;
+            color: #0b1612;
+            text-align: center;
+        }
+        p{
+            font-size: 2rem;
+            color: #f70303;
+            font-family: "Indie Flower", cursive;
+        }
+        img{
+            width: 100%;
+        }
+        .bottom {
+            padding-top: 10px;
+        }
+        .butn {
+            background: #c7f841;
+            font-family: "Indie Flower", cursive;
+            border-radius: 7px;
+            color: rgb(245, 9, 9);
+            font-size: 30px;
+            padding: 16px 25px 16px 25px;
+            text-decoration: none;
+        }
+        .butn:hover {
+            background: #232931;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Let's Play</h1>
+        <div class="dice">
+            <p class="Player1">Player1</p>
+            <img class="img1" id="dice1" src="photos/dice1.png" alt="dice1">
+        </div>
+        <div class="dice">
+            <p class="Player2">Player2</p>
+            <img class="img2" id="dice2" src="photos/dice1.png" alt="dice1">
+        </div>
+    </div>
+    <div class="container bottom">
+        <button class="butn" id="btn1" type="button"
+        onclick="rollTheDice()">
+        Roll the Dice
+        </button>
+    </div>
+    <div class="container bottom">
+        <button class="butn" id="btn2" type="button"
+        onclick="editNames()">
+        Edit Names
+        </button>
+    </div>
+    <div class="container bottom">
+        <button class="butn" type="button"
+        onclick="finishTheGame()">
+        Finish Game
+        </button>
+    </div>
+    <script>
+        // Player name
+        var player1 = "Player 1";
+        var player2 = "Player 2";
+
+         // Function to change the player name
+         function editNames() {
+            player1 = prompt("Change Player1 name");
+            player2 = prompt("Change player2 name");
+
+            document.querySelector("p.Player1").innerHTML = player1;
+            document.querySelector("p.Player2").innerHTML = player2;
+         }
+
+         // Function to roll the dice
+        function rollTheDice() {
+            setTimeout(function () {
+                var randomNumber1 = Math.ceil(Math.random() * 6);
+                var randomNumber2 = Math.ceil(Math.random() * 6);
+
+                
+                document.querySelector(".img1").setAttribute("src","photos/dice" + randomNumber1 + ".png");
+                document.querySelector(".img2").setAttribute("src","photos/dice" + randomNumber2 + ".png");
+
+                // if(randomNumber1 == 1){
+                //     document.getElementById("dice1").src = 
+                // }
+
+                if (randomNumber1 === randomNumber2) {
+                    document.querySelector("h1").innerHTML = "Draw!";
+                }
+
+                else if (randomNumber1 < randomNumber2) {
+                    document.querySelector("h1").innerHTML = (player2 + " WINS!");
+                }
+
+                else {
+                    document.querySelector("h1").innerHTML = (player1 + " WINS!");
+                }
+            }, 500);
+           
+        }
+        //Function to finish the game
+        function finishTheGame() {
+            var result = "Game is Over";
+            document.querySelector("h1").innerHTML = result;
+            document.getElementById("btn1").innerHTML = "Start the Game";
+            document.getElementById("btn2").disabled = true;
+        }
+
+    </script>
+</body>
+</html>
