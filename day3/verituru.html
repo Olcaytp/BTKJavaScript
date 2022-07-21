@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var isim = "Olcay";
+        var sayi = 12;
+        var mantiksal = true;
+        var isimler = ["olcay", "arzu", "ismail"]; // array ama js object olarak görür
+        var isimler2 = new Array("olcay", "aarzu");// bu da nesnesel dizi
+        var nesneler = new Object();
+        var tanimsiz;
+        var bos = "";
+
+        var depo = typeof(isim);
+        document.write(depo + "<br/>");
+        var depo = typeof(sayi);
+        document.write(depo + "<br/>");
+        var depo = typeof(isimler);
+        document.write(depo + "<br/>");
+        var depo = typeof(isimler2);
+        document.write("2.----> "+depo + "<br/>");
+        var depo = typeof(nesneler);
+        document.write(depo + "<br/>");
+
+    </script>
+</body>
+</html>

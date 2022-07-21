@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        //let = blok kapsamlı değişkendir.
+        //var = global kapsamlı değişkendir.
+        //const = blok kapsamlı sabit değişkendir.
+
+        //global scope
+
+        /*
+        {
+            local global / local scope
+            {
+                local scope
+            }
+        }
+        */
+
+        //------------------------------------------------------------------------------    
+        var chr = "olcay";
+        var chr = "arzu";
+        var chr = "isocan";
+        document.write(chr+ "<br/>");
+        //-----
+        let chr2 = "olcay";
+        chr2  = "arzu"
+        document.write(chr2);
+        document.write(" --->"+typeof(chr2)+ "<br/>");
+        // let chr2 = "arzu";
+        // let chr2 = "isocan";   // hata alırız
+        //----
+        const chr3 = "olcay";
+        // chr3 = "arzu"; // const ta sonradan değişikliğe kesinlikle izin verilmez
+        document.write(chr3+ "<br/>");
+        // const chr3 = "arzu";
+        // const chr3 = "isocan";
+
+        //-----
+        var isim = "olcay";
+        if(true){
+            var isim = "arzu";
+            document.write(isim);
+        }
+        document.write(isim+ "<br/>");
+        //-----
+        var isim2 = "olcay";
+        if(true){
+            let isim2 = "arzu";
+            let kardes = "ismail";
+            document.write(isim2);
+        }
+        // document.write(kardes); // let block scope olduğundan hata verir.
+        document.write(isim2+ "<br/>");
+        //-----
+        let isim3 = "olcay";
+        if(true){
+            let isim3 = "arzu";
+            document.write(isim3);
+        }
+        document.write(isim3+ "<br/>");
+        //-----
+        const isim4 = "olcay";
+        if(true){
+            const isim4 = "arzu";
+            document.write(isim4);
+        }
+        document.write(isim4);
+        //---------------------------------------------------------------------------------------
+    </script>
+    
+</body>
+</html>
