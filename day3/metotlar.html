@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //length : değişken içeriğinin karakter sayısını geri döndürür.
+
+        var metin = "Dünyada ve Türkiye'de en yaygın kullanılan script dili JavaScript'tir!"
+        document.write(metin+"<br/>");
+
+        var count = metin.length;
+        document.write(count+"<br/>");
+        //-----
+        var metin = 'Dünyada ve Türkiye\'de en yaygın kullanılan script dili JavaScript\'tir!'
+        document.write(metin+"<br/>");
+
+        var count = metin.length;
+        document.write(count+"<br/>");
+
+        document.write("--------------------------------------------------------------------"+ "<br/>");
+        //eval() : kendisine parametre olarak verilen değerleri javascript kodlamasına çevirerek 
+        //komut gibi çalıştırır ve geriye değer döndürür
+
+        var sonuc = "10 * 40";
+        document.write(sonuc+"<br/>");
+        var sonuc = eval("10 * 40");
+        document.write(sonuc+"<br/>")
+
+        document.write("--------------------------------------------------------------------"+ "<br/>");
+        //trim(): değişken içeriğinin varsa başındaki ve sonundaki boşlukları silerek değeri geriye döndürür.
+        var egitim = "   JavaScript "; //tarayıcı tek boşluktan fazlasını göstermez.alert ile bakalım.
+        var kursiyer = "olcay "
+        var result = kursiyer + egitim + " kursunda";
+        document.write(result + "<br/>");
+        alert("1.alert = "+result);
+        var result = kursiyer + egitim.trim() + " kursunda bir öğrencidir.";
+        alert("2.alert = "+result + "<br/>");
+
+        document.write("--------------------------------------------------------------------"+ "<br/>");
+        //slice(): kendisine verilen parametreler ile tanımlanmış değişken içeriği aralığında bulunan değerleri kopyalayarak yeni bir içerik oluşturur ve geriye döndürür.
+        var icerik = "Olcay Tapan BTK JavaScript Kursunda";
+        document.write(icerik+"<br/>");
+
+        var result2 = icerik.slice(6,11);
+        document.write(result2+"<br/>");
+        
+        document.write("--------------------------------------------------------------------"+ "<br/>");
+        //String(): değişken içeriğini mutlak olarak string veri türünde düz bir metne dönüştürür.
+        var bir = Boolean(0);
+        document.write(typeof(bir) + ": " + bir + "<br/>");
+        var yenibir = String(bir);
+        document.write(typeof(yenibir)+ ": " + yenibir +"<br/>")
+    
+    </script>
+</body>
+</html>
