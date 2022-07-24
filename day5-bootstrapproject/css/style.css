@@ -1,0 +1,26 @@
+/* .bg-light{
+    background-color: aqua !important;
+} 
+bu şekilde bootstrap in class ını değiştirirsek sonrasında aynı sınıfı kullanmak
+istediğimizde kafamız karışabilir.O yüzden farklı bir isimle yeni sınıf 
+oluşturmak daha mantıklı
+*/
+.bg-nav1{
+    background-color: aquamarine;
+}
+/* dark background*/
+.dark-bg{
+    background: linear-gradient(
+        rgba(0,0,0, .4),
+        rgba(0,0,0, .9)), url(../img/decorwise-ltd.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero .container{
+    height: 50vh;
+}
+.generic{
+    padding: 100px 0;
+}
