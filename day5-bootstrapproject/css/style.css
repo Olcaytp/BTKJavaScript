@@ -72,3 +72,8 @@ section#latest .imgscnd img {
     }
 } 
 responsive tasarım için hangi ekran genişliğinde yukarıdaki gibi görünmesini istediğimizi belirtiyoruz*/
+section#contact .icon{
+    display: flex;
+    justify-content: flex-end !important;
+
+}
