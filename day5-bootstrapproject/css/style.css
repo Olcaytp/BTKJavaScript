@@ -18,9 +18,50 @@ oluşturmak daha mantıklı
     background-attachment: fixed;
 }
 
-#hero .container{
+#about .container{
     height: 50vh;
 }
 .generic{
     padding: 100px 0;
+}
+section#latest .latest-item img{
+    min-height: 100%;
+    width: 100%;
+}
+section#latest button{
+    max-height: 250px;
+    padding: 0;
+    overflow: hidden;
+}
+section#latest .latest-item{
+    position: relative;
+}
+section#latest .latest-item:hover .overlay{
+    opacity: 1;
+    background: rgba(189, 61, 75, .9);
+}
+section#latest .latest-item:hover i{
+    opacity: 1;
+    transform: non;
+}
+section#latest .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(189, 61, 75, .9);
+    opacity: .5;
+    color: white;
+    transition: all .5s;
+}
+section#latest .overlay i{
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: 0;
+    font-size: 2rem;
+}
+section#latest .imgscnd img {
+    height: 250px !important;
+    width: 300px !important;
 }
