@@ -65,3 +65,10 @@ section#latest .imgscnd img {
     height: 250px !important;
     width: 300px !important;
 }
+/* @media (min-width: 1400px) { 
+    #about p.lead{
+        font-size: 10px;
+        color: blue;
+    }
+} 
+responsive tasarım için hangi ekran genişliğinde yukarıdaki gibi görünmesini istediğimizi belirtiyoruz*/

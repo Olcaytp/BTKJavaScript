@@ -22,7 +22,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
 
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-danger py-3">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-danger py-3">
             <div class="container">
               <a class="navbar-brand" href="#">Çapanya Dekorasyon</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,38 +31,31 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto ">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                    <a class="nav-link active" aria-current="page" href="#" id="home">Anasayfa</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Hakkımızda</a>
+                    <a class="nav-link" href="#about">Hakkımızda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Misyonumuz</a>
+                    <a class="nav-link" href="#mission">Misyonumuz</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projelerimiz</a>
+                    <a class="nav-link" href="#latest">Projelerimiz</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Ne Yapıyoruz?</a>
+                    <a class="nav-link" href="#whatwedo">Ne Yapıyoruz?</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Ekibimiz</a>
+                    <a class="nav-link" href="#team">Ekibimiz</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">İletişim</a>
+                    <a class="nav-link" href="#contact">İletişim</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -95,8 +88,9 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
           bunlar: ekran large oldğunda 6 birimlik alan, medium olduğunda 
           4 birimlik alana sahip olsun demek.-->
           <h2 class="display-5 text-danger  mb-5">MİSYONUMUZ</h2>
+
           <div class="row mb-5">
-            <div class="col-8">
+            <div class="col-sm-12 col-md-8"><!--col-sm-12: small ekranda 12 sütun yer kapla-->
               <div class="d-flex h-100 flex-column justify-content-center">
                 <p>Çapanya Dekorasyon'da amacımız, Didim'de ve memleketlerde profesyonel, nazik ve dostane bir şekilde yürütülen mükemmel konut ve ticari boyama ve dekorasyon hizmetleri sunmaktır.
                 40 yılı aşkın alçı, boya, a'dan z'ye anahtar teslim dekorasyon deneyimimizle, yüksek kaliteli işçiliğimizin kendisi için konuştuğunu düşünüyoruz.
@@ -104,22 +98,24 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                   </p>
               </div>
             </div>
-            <div class="col-4 p-0">
-              <img src="img/reconstruction.jpg" alt="misyonresmi" class="img-fluid">
+            <div class="col-sm-12 col-md-4">
+              <img width="350px" src="img/reconstruction.jpg" alt="misyonresmi" class="img-fluid">
             </div>
           </div>
+
           <div class="row">
-            <div class="col-8">
+            <div class="col-sm-12 col-md-8">
               <div class="d-flex h-100 flex-column justify-content-center">
                   <p>Son derece yetenekli ekibimiz bina, blok, ofis, inşaat veya iç tasarım projeniz, koruma altındaki bina, miras mülkü, ofis dekorasyonu, butik otel ve daha pek çok şey için 
                 yüksek kaliteli yüzeyler sağlayabiliriz. Boyayabilir ve süsleyebilir, duvar kağıdı asabilir, özel yüzeyler uygulayabilir ve çok daha fazlasını yapabiliriz. Hem iç hem de dış cephe 
                 boya ve tadilat projelerinde bizimle çalışın! </p>
               </div>
             </div>
-            <div class="col-4 p-0 order-first">
-              <img src="img/kitchen.jpg" alt="misyonresmi" class="img-fluid">
+            <div class="col-sm-12 col-md-4 order-first">
+              <img width="350px" src="img/kitchen.jpg" alt="misyonresmi" class="img-fluid">
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -135,7 +131,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
 
         <div class="row mb-5">
 
-          <div class="col p-0">
+          <div class="col-xl-3 col-sm-6 p-0">
             <div class="latest-item">
               <button class="btn btn-primary p-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#itemDetail1" aria-expanded="false" aria-controls="collapseExample">
                 <img class="img-fluid" src="img/b1.jpg" >
@@ -147,7 +143,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
             </div>
           </div>
 
-          <div class="col p-0">
+          <div class="col-xl-3 col-sm-6 p-0">
             <div class="latest-item">
               <button class="btn btn-primary p-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#itemDetail2" aria-expanded="false" aria-controls="collapseExample">
                 <img class="img-fluid" src="img/akbuk4.jpg" >
@@ -159,7 +155,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
             </div>
           </div>
 
-          <div class="col p-0">
+          <div class="col-xl-3 col-sm-6 p-0">
             <div class="latest-item">
               <button class="btn btn-primary p-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#itemDetail3" aria-expanded="false" aria-controls="collapseExample">
                 <img class="img-fluid" src="img/mutlu1.jpg" >
@@ -171,7 +167,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
             </div>
           </div>
 
-          <div class="col p-0">
+          <div class="col-xl-3 col-sm-6 p-0">
             <div class="latest-item">
               <button class="btn btn-primary p-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#itemDetail4" aria-expanded="false" aria-controls="collapseExample">
                 <img class="img-fluid" src="img/capanya4.PNG" >
@@ -188,7 +184,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
           <div class="imgscnd collapse" id="itemDetail1">
             <div clas="container-fluid mt-5 p-0">
               <div class="row p-0 shadow ">
-                <div class="col p-0">
+                <div class="col-sm-6 col-xl-3 p-0">
                   <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#itemDetail1" aria-expanded="false" aria-controls="collapseExample"></button>
                 <dl class="row ps-5">
                   <dt class="col-12"><span class="text-danger lead">PROJE İSMİ</span></dt>
@@ -200,9 +196,9 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                   <dd class="col-8">1 YIL</dd>
                 </dl>
                 </div>
-                <div class="col p-0"><img class="img-fluid" src="img/b1.jpg" alt="1"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/b2.jpg" alt="2"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/b3.jpg" alt="3"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/b1.jpg" alt="1"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/b2.jpg" alt="2"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/b3.jpg" alt="3"></div>
               </div>
             </div>
           </div>
@@ -212,7 +208,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
           <div class="imgscnd collapse" id="itemDetail2">
             <div class="container-fluid mt-5 p-0">
               <div class="row p-0 shadow">
-                <div class="col p-0">
+                <div class="col-sm-6 col-xl-3 p-0">
                   <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#itemDetail2" aria-expanded="false" aria-controls="collapseExample"></button>
                 <dl class="row ps-5">
                   <dt class="col-12"><span class="text-danger lead">PROJE 2</span></dt>
@@ -224,9 +220,9 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                   <dd class="col-8">2 YIL</dd>
                 </dl>
                 </div>
-                <div class="col p-0"><img class="img-fluid" src="img/akbuk1.jpg" alt="1"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/akbuk2.jpg" alt="2"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/akbuk3.jpg" alt="3"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/akbuk1.jpg" alt="1"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/akbuk2.jpg" alt="2"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/akbuk3.jpg" alt="3"></div>
               </div>
             </div>
           </div>
@@ -236,7 +232,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
           <div class="imgscnd collapse" id="itemDetail3">
             <div class="container-fluid mt-5 p-0">
               <div class="row p-0 shadow">
-                <div class="col p-0">
+                <div class="col-sm-6 col-xl-3 p-0">
                   <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#itemDetail3" aria-expanded="false" aria-controls="collapseExample"></button>
                 <dl class="row ps-5">
                   <dt class="col-12"><span class="text-danger lead">PROJE 3</span></dt>
@@ -248,9 +244,9 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                   <dd class="col-8">5 AY</dd>
                 </dl>
                 </div>
-                <div class="col p-0"><img class="img-fluid" src="img/mutlu2.webp" alt="1"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/mutlu3.webp" alt="2"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/mutlu4.webp" alt="3"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/mutlu2.webp" alt="1"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/mutlu3.webp" alt="2"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/mutlu4.webp" alt="3"></div>
               </div>
             </div>
           </div>
@@ -260,7 +256,7 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
           <div class="imgscnd collapse" id="itemDetail4">
             <div class="container-fluid mt-5 p-0">
               <div class="row p-0 shadow">
-                <div class="col p-0">
+                <div class="col-sm-6 col-xl-3 p-0">
                   <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#itemDetail4" aria-expanded="false" aria-controls="collapseExample"></button>
                 <dl class="row ps-5">
                   <dt class="col-12"><span class="text-danger lead">PROJE 4</span></dt>
@@ -272,9 +268,9 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                   <dd class="col-8">5 YIL</dd>
                 </dl>
                 </div>
-                <div class="col p-0"><img class="img-fluid" src="img/capanya1.PNG" alt="1"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/capanya2.PNG" alt="2"></div>
-                <div class="col p-0"><img class="img-fluid" src="img/capanya3.PNG" alt="3"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/capanya1.PNG" alt="1"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/capanya2.PNG" alt="2"></div>
+                <div class="col-sm-6 col-xl-3 p-0"><img class="img-fluid" src="img/capanya3.PNG" alt="3"></div>
               </div>
             </div>
           </div>
@@ -291,10 +287,10 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
       <div class="container">
         <h2 class="display-5 text-danger mb-5">NE YAPIYORUZ ?</h2>
         <div class="row">
-          <div class="col">
 
+          <div class="col-md-6 col-lg-4">
             <div id="resimbir" class="card bg-light border-0">
-              <img src="img/interior works.jpg" class="card-img-top rounded-0">
+              <img width="200px" height="250px" src="img/interior works.jpg" class="card-img-top rounded-0">
               <div class="card-body ps-3">
                 <h5 class="lead text-uppercase text-danger mb-5">MİMARİ TASARIM & DEKORASYON</h5>
                 <h6 class="card-title text-danger">NEDİR BU DEKORASYONLAR?</h6>
@@ -315,21 +311,20 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                 </ul>
               </div>
             </div>
-
           </div>
-          <div class="col">
 
+          <div class="col-md-6 col-lg-4">
             <div id="resimiki" class="card bg-light border-0">
-              <img src="img/isiyalitim.jpg" class="card-img-top rounded-0">
+              <img width="200px" height="250px" src="img/housework.jpg" class="card-img-top rounded-0">
               <div class="card-body ps-3">
-                <h5 class="lead text-uppercase text-danger mb-5">ISI YALITIM</h5>
-                <h6 class="card-title text-danger">NEDİR BU ISI YALITIM?</h6>
+                <h5 class="lead text-uppercase text-danger mb-5">İÇ MEKAN HİZMETLERİMİZ</h5>
+                <h6 class="card-title text-danger">NEDİR İÇ MEKAN İŞLERİ?</h6>
                 <p class="card-text">
-                  Dış Cephe Mantolama Isı Yalıtım Bir kere yapılır. doğru Yapılırsa 4 mevsim konfor 4 
-                  mevsim kazanç demektir. Ekonomiktir uzun ömürlüdür ortalama %50 enerji tasarrufu sağlar. 
-                  2 veya 3 yıl içerisinde maliyetini karşılar dış cephelerden gelen Nem ve Rutubet  gibi  
-                  sorunları ortadan kaldırır.  
-                </p>
+                  Mekan içerisinde algı, algı biçimlerine ve mekanın algıya etkilerine göre çeşitlilik oluşturmaktadır. 
+                  Algınız ise fizyolojik, psikolojik ve sosyolojik olarak incelenmektedir. Mekan algısında etkili olan 
+                  faktörler; boyutsal, görsel, işitsel, ışıksal ve ısısal algılar insan üzerinde etkiler oluşturmaktadır. 
+                  İlk aşamada mekanlarınızı gereksinimlerinize yönelik tasarlarken, ikinci aşamada ise; biçim, konstrüksiyon, 
+                  malzeme, doku ve renk gibi tasarım ilkeleri mekanı biçimlendirmeye etki eder.</p>
                 <!-- ul.list-item>li.list-inline-item*2 -->
                 <ul class="list-inline">
                   <li class="list-inline-item">
@@ -342,22 +337,20 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                 </ul>
               </div>
             </div>
-
           </div>
-          <div class="col">
 
+          <div class="col-md-6 col-lg-4">
             <div id="resimuc" class="card bg-light border-0">
-              <img src="img/asmatavan.jpg" class="card-img-top rounded-0">
+              <img width="200px" height="250px" src="img/asmatavan.jpg" class="card-img-top rounded-0">
               <div class="card-body ps-3">
-                <h5 class="lead text-uppercase text-danger mb-5">ASMA TAVAN</h5>
-                <h6 class="card-title text-danger">NEDİR BU ASMA TAVAN?</h6>
+                <h5 class="lead text-uppercase text-danger mb-5">DIŞ MEKAN HİZMETLERİMİZ</h5>
+                <h6 class="card-title text-danger">NEDİR DIŞ MEKAN İŞLERİ?</h6>
                 <p class="card-text">
-                  Elektrik imalatlara montaj boşluğu açan, estetik bir görünüm elde etmek amacıyla aynı 
-                  zamanda ısı yalıtımı ve ses yalıtımı sağlayan tavan modeline asma tavan denir. Yapıdaki 
-                  istenmeyen görüntülerin engellenmesi için tercih edilen bir tavan modelidir. Tesisat 
-                  boruları, kablolar, duvar ve döşeme şeklindeki kötü görüntülerin kapatılmasını sağlar. 
-                  Hastaneler, binalar, oteller, bürolar, kamu hizmet binaları vb. birçok yapıda asma tavana 
-                  ihtiyaç duyulur. Estetik bir görünüm sağlar ve bakımı kolaydır.
+                  ' Dış işler ' terimi , bir bina projesinin dış çevresine yapılan her türlü işi tanımlar . 
+                  Bunlar işlevsel veya estetik özelliklere yönelik çalışmalar olabilir. Dış Cephe boyama, 
+                  kaplama(köpük, seramik, güneş enerji panlei), mantolama gibi işler bina duvarı ile ilgili şeyler.
+                  Çevre düzenleme, drenaj sistemleri, bahçe düzenleme gibi tüm çevresel işler de dış mekan 
+                  işlerine örnek gösterilebilir.
                 </p>
                 <!-- ul.list-item>li.list-inline-item*2 -->
                 <ul class="list-inline">
@@ -371,7 +364,34 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                 </ul>
               </div>
             </div>
+          </div>
 
+          <div class="col-md-6 col-lg-4 d-none d-md-block d-lg-none"><!--d-none: görünmez yapar, d-md-block: md ekranda görünür yapar; 
+          d-lg-none: lg ekranda görünmez yapar.-->
+            <div id="resimdort" class="card bg-light border-0">
+              <img width="200px" height="250px" src="img/asmatavan.jpg" class="card-img-top rounded-0">
+              <div class="card-body ps-3">
+                <h5 class="lead text-uppercase text-danger mb-5">DIŞ MEKAN HİZMETLERİMİZ</h5>
+                <h6 class="card-title text-danger">NEDİR DIŞ MEKAN İŞLERİ?</h6>
+                <p class="card-text">
+                  ' Dış işler ' terimi , bir bina projesinin dış çevresine yapılan her türlü işi tanımlar . 
+                  Bunlar işlevsel veya estetik özelliklere yönelik çalışmalar olabilir. Dış Cephe boyama, 
+                  kaplama(köpük, seramik, güneş enerji panlei), mantolama gibi işler bina duvarı ile ilgili şeyler.
+                  Çevre düzenleme, drenaj sistemleri, bahçe düzenleme gibi tüm çevresel işler de dış mekan 
+                  işlerine örnek gösterilebilir.
+                </p>
+                <!-- ul.list-item>li.list-inline-item*2 -->
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <small class="text-muted"><i class="bi bi-clock">
+                      <span class="align-middel">2 Days Agp |</span></i></small>
+                  </li>
+                  <li class="list-inline-item">
+                    <small class="text-muted"><i class="bi bi-chat-left-text">10</i></small>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -396,15 +416,15 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
       </div>
     </section>
 
-    <!--Approach Section-->
-    <section id="idapproach" class="generic">
+    <!--Services Section-->
+    <section id="idservices" class="generic">
       <div class="container">
         <h2 class="display-5 text-danger mb-5">HİZMETLERİMİZ</h2>
         <div class="row">
-          <div class="col">
 
-            <div class="card bg-light border-0">
-              <img src="img/housework.jpg" class="card-img-top rounded-0">
+          <div class="col-lg-12 col-xl-6">
+            <div class="card bg-light border-0 mb-5">
+              <img height="350px" width="200px" src="img/housework.jpg" class="card-img-top rounded-0">
               <div class="card-body">
                 <h2 class="lead text-danger text-uppercase mb-4">İç mekan hizmetlerimiz</h2>
                 <div class="accordion" id="accordionExample">
@@ -416,13 +436,19 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the 
-                        appropriate classes that we use to style each element. These classes control the overall appearance, as well as the 
-                        showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. 
-                        It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does 
-                        limit overflow.
+                      <div class="accordion-body ">
+                          <p>
+                            Evinize boya yapılmadan önce duvarlarınızın yapısı düzeltilmelidir. Çatlakların sıvanması ve pütürlerin giderilmesi 
+                          gerekir. Özellikle evinize saten boya yaptırmak istiyorsanız bütün duvarlara saten alçı işlemi uygulanarak pürüzlere 
+                          giderilmelidir. Bununla beraber evinize kartonpiyer asma tavan veya kenarlık yapılacaksa son kat boyadan önce yapılmalıdır. 
+                          Bu işlemler yapıldıktan sonra belirlenen renklerde son kat boya vurulur.
+                          </p>
                       </div>
+                          <img src="img/alci1.jpg" width="110px" height="100px">
+                          <img src="img/alci2.jpeg" width="110px" height="100px">
+                          <img src="img/alci3.jpeg" width="120px" height="100px">
+                          <img src="img/alci4.jpg" width="120px" height="100px">
+                          <img src="img/alci5.png" width="120px" height="100px">
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -434,12 +460,22 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds 
-                        the appropriate classes that we use to style each element. These classes control the overall appearance, as well as 
-                        the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. 
-                        It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition 
-                        does limit overflow.
+                        <p>
+                          Öncelikli olarak eğer çocuk sahibi iseniz, çocuk odasında kullanmanız gereken duvar kağıtlarının silinebilir özellikte 
+                        olmasına dikkat etmelisiniz. Çünkü küçük çocuklar duvarları bir şekilde kirletirler. Ebeveynler olarak, sizler de devamlı 
+                        duvar kağıdını ya da rengini değiştirmek yerine, silinebilir duvar kağıdı tercih ettiğiniz takdirde, ufak silme işleminin 
+                        ardından duvarınız eski fonksiyonuna geri dönecektir. Duvar kağıdı seçerken aldığınız malzemenin kalitesinin yanı sıra, 
+                        duvarınızın pürüzlü olup olmaması da oldukça önemlidir. Duvarların pürüzlü olması, duvar kağıdı tadilatı işlemlerini de 
+                        oldukça zora sokacaktır. Kullandığınız duvar kağıtları odanıza yakışmayacak ve pürüzlü yüzeyde çok kötü duracaktır. 
+                        Bu durumda duvar kağıdı döşemesini yapmadan önce mutlaka duvarların uzun düz bir şekilde olmasını sağlayınız. 
+                        Bunu yapmak için bir boya ustamızdan yardım alabilirsiniz.
+                        </p>
                       </div>
+                        <img src="img/wallpaper.jpg" width="110px" height="100px">
+                        <img src="img/wallpaper2.jpg" width="110px" height="100px">
+                        <img src="img/wallpaper3.jpg" width="120px" height="100px">
+                        <img src="img/wallpaper4.jpg" width="120px" height="100px">
+                        <img src="img/wallpaper5.jpg" width="120px" height="100px">
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -451,12 +487,17 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds 
-                        the appropriate classes that we use to style each element. These classes control the overall appearance, as well as 
-                        the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. 
-                        It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does 
-                        limit overflow.
+                        <p>
+                          Asma tavan, mevcut betonarme, çelik konstrüksiyon veya ahşap tavan iskeleti altında mekanik ve elektrik imalatlara 
+                          montaj boşluğu sağlayan sisteme verilen ortak isim. Mevcut tavandan sarkıtılan metal çubuklara yatay profiller 
+                          asılarak oluşturulan bu sistem alçıpan ya da dekoratif paneller ile sonlandırılır.
+                        </p>
                       </div>
+                      <img src="img/tavan1.jpg" width="110px" height="100px">
+                        <img src="img/tavan2.jpg" width="110px" height="100px">
+                        <img src="img/tavan3.webp" width="120px" height="100px">
+                        <img src="img/tavan4.jpg" width="120px" height="100px">
+                        <img src="img/tavan5.jpg" width="120px" height="100px">
                     </div>
                   </div>
                 </div>
@@ -464,9 +505,9 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-12 col-xl-6">
             <div class="card bg-light border-0">
-              <img src="img/outdoorwork.jpg" class="card-img-top rounded-0">
+              <img height="350px" width="200px" src="img/outdoorwork.jpg" class="card-img-top rounded-0">
               <div class="card-body">
                 <h2 class="lead text-danger text-uppercase mb-4">Dış mekan hizmetlerimiz</h2>
                 <div class="accordion" id="accordionExampleFour">
@@ -474,51 +515,64 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
                     <h2 class="accordion-header" id="headingFour">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" 
                       data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                        Accordion Item #1
+                        Isı Yalıtım-Mantolama
                       </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExampleFour">
                       <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the 
-                        appropriate classes that we use to style each element. These classes control the overall appearance, as well as the 
-                        showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. 
-                        It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does 
-                        limit overflow.
+                        <p>
+                          Isı yalıtımı, sıcaklık gradyeni içinden olan ısı akışının düşürülerek, sıcaklık gradyeninin korunması. Isı, 
+                          doğal olarak yüksek sıcaklıktan, düşük sıcaklığa doğru akar ve direncin en az olduğu yol boyunca en fazla ısı akışı oluşur
+                        </p>
                       </div>
+                          <img src="img/isi1.jpg" width="110px" height="100px">
+                          <img src="img/isi2.webp" width="110px" height="100px">
+                          <img src="img/isi3.jpg" width="120px" height="100px">
+                          <img src="img/isi4.png" width="120px" height="100px">
+                          <img src="img/isi5.jpg" width="120px" height="100px">
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" 
                       aria-expanded="false" aria-controls="collapseFive">
-                        Accordion Item #2
+                        Seramik-Granit-Mermer-Taş Döşeme
                       </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExampleFive">
                       <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds 
-                        the appropriate classes that we use to style each element. These classes control the overall appearance, as well as 
-                        the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. 
-                        It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition 
-                        does limit overflow.
+                        <p>
+                          Seramik fayans döşeme, binaların iç ve dış duvarlarının zeminlerinin kaplanmasında kullanılan önemli bir dekorasyon ürünüdür. 
+                          Doğadan, doğal yollarla elde edilen çok yüksek sıcaklıkta şekil verilerek pişirilmiş toprak maddelerden yapılan sağlıklı ve 
+                          ekolojik bir üründür.
+                        </p>
                       </div>
+                          <img src="img/fayans1.jpg" width="110px" height="100px">
+                          <img src="img/fayans2.jpeg" width="110px" height="100px">
+                          <img src="img/fayans3.jpg" width="120px" height="100px">
+                          <img src="img/fayans3.jpg" width="120px" height="100px">
+                          <img src="img/fayans5.jpg" width="120px" height="100px">
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSix">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" 
                       aria-expanded="false" aria-controls="collapseSix">
-                        Accordion Item #3
+                      Cam Balkon İşleri
                       </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExampleSix">
                       <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds 
-                        the appropriate classes that we use to style each element. These classes control the overall appearance, as well as 
-                        the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. 
-                        It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does 
-                        limit overflow.
+                       <p>
+                        Cam balkon adından da anlaşıldığı üzere balkonların cam ürünleri ile tamamen kaplanması işlemine verilen genel addır. 
+                        Son yıllarda ülkemizde ve dünyada sıklıkla kullanılan cam balkon işleri kendisine olan ihtiyacı gün geçtikçe artırmaktadır.
+                       </p>
                       </div>
+                          <img src="img/cam1.jpg" width="110px" height="100px">
+                          <img src="img/cam2.jpg" width="110px" height="100px">
+                          <img src="img/cam3.jpg" width="120px" height="100px">
+                          <img src="img/cam4.jpg" width="120px" height="100px">
+                          <img src="img/cam5.jpg" width="120px" height="100px">
                     </div>
                   </div>
                 </div>
@@ -528,6 +582,252 @@ Bootstrap i daha az css kodu yazmak için kullanırız-->
         </div>
       </div>
     </section>
+
+    <!--Team-->
+    <section id="team" class="generic">
+      <div class="container">
+        <h2 class="display-5 text-danger mb-5">EKİBİMİZ</h2>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 col-sm-6 p-0">
+            <div class="d-grid bg-danger py-5">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-danger rounded-0 py-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="lead">Kurucu Müdür</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 p-0">
+            <div class="d-grid bg-warning py-5">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-warning rounded-0 py-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <span class="lead">İnşaat Mühendisi</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 p-0">
+            <div class="d-grid bg-success py-5">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success rounded-0 py-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <span class="lead">Genel Müdür</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 p-0">
+            <div class="d-grid bg-info py-5">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-info rounded-0 py-5" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <span class="lead">İnsan Kaynakları</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal-->
+      <!-- Modal1 -->
+      <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+              <img src="img/naciusta.jpeg" class="img-fluid">
+              <h5 class="lead text-danger mt-2">NACİ TAPAN</h5>
+              <p><strong>Çalışkan,Dürüst ve Başarılı bir işadamı.</strong>1989 yılından bu yana dekorasyon işinin içinde.
+              1995'ten beri Didim'de Dekorasyon hizmeti vermektedir. Müşterilerine her zaman dürüst ve yardımsever yaklaşır.</p>
+              <ul>
+                <li>1970 doğumlu, 52 yaşında.</li>
+                <li>Evli, 4 çocuk ve 3 torun sahibidir.</li>
+                <li>Memleketi Kahramanmaraş.</li>
+              </ul>
+            </div>
+            <div class="btn-group w-100" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">LINKEDIN</button>
+              <button type="button" class="btn btn-warning">FACEBOOK</button>
+              <button type="button" class="btn btn-success">TWITTER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal2 -->
+      <div class="modal fade" id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+              <img src="img/olcayusta.jpeg" class="img-fluid">
+              <h5 class="lead text-danger mt-2">OLCAY TAPAN</h5>
+              <p><strong>Başarılı bir İnşaat Mühendisi.</strong> 2016 yılında mezun olduğundan beri çeşitli büyük ölçekli şantiyelerde
+              ve aile şirketinde çalışmış ve deneyim kazanmıştır.Şimdi ise 2.üniversitesini okuyor.Bilgisayar mühendisi olma yolunda
+            ilerliyor</p>
+              <ul>
+                <li>1992 doğumlu, 31 yaşında.</li>
+                <li>Evli</li>
+                <li>Gebze'de ikamet ediyor</li>
+              </ul>
+            </div>
+            <div class="btn-group w-100" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">LINKEDIN</button>
+              <button type="button" class="btn btn-warning">FACEBOOK</button>
+              <button type="button" class="btn btn-success">TWITTER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal3 -->
+      <div class="modal fade" id="exampleModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+              <img src="img/caferusta.jpg" class="img-fluid">
+              <h5 class="lead text-danger mt-2">CAFER TAPAN</h5>
+              <p><strong>Azimli, çalışkan ve dürüst bir kişiliğe sahip.</strong>Çalışmayı sever, çalışkandır. Ailesini çok sever,
+              kendisini ailesine adamış tam bir aile babası.Şu sıralar rüzgar enerjisi sektöründe mekanik tekniker olarak 
+              çalışmakatadır.</p>
+              <ul>
+                <li>1989 doğumlu, 33 yaşında.</li>
+                <li>Evli ve 3 çocuk sahibidir.</li>
+                <li>Afşin'de ikamet etmektedir.</li>
+              </ul>
+            </div>
+            <div class="btn-group w-100" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">LINKEDIN</button>
+              <button type="button" class="btn btn-warning">FACEBOOK</button>
+              <button type="button" class="btn btn-success">TWITTER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal4 -->
+      <div class="modal fade" id="exampleModal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+              <img src="img/serifesultan.png" class="img-fluid">
+              <h5 class="lead text-danger mt-2">ŞERİFE TAPAN</h5>
+              <p><strong>Çalışkan, cefakar ve sabırlı.</strong>Eşi Naci bey ile beraber hayat yolculuğunda ona yoldaş olmuş ve onu her zaman
+              desteklemiştir.Naci bey'in inşaat stresinin üstesinden gelmesinde ona dert ortağı olmuş ve başarılı olmasında pay sahibidir.
+            Allah onlardan razı olsun :)</p>
+              <ul>
+                <li>1970 doğumlu, 52 yaşında.</li>
+                <li>Evli, 4 çocuk ve 3 torun sahibidir.</li>
+                <li>Memleketi Kahramanmaraş.</li>
+              </ul>
+            </div>
+            <div class="btn-group w-100" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">LINKEDIN</button>
+              <button type="button" class="btn btn-warning">FACEBOOK</button>
+              <button type="button" class="btn btn-success">TWITTER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION-->
+  <section id="contact" class="generic dark-bg">
+    <div class="container">
+      <h2 class="display-5 text-danger mb-5">GET IN TOUCH</h2>
+
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <form class="row">
+
+            <div class="col-6">
+              <div class="input-group">
+                <div class="input-group-text rounded-0 bg-danger border-danger text-white">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <input type="text" class="form-control rounded-0 border-danger text-white bg-transparent"
+                  placeholder="NAME *" required>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="input-group">
+                <div class="input-group-text rounded-0 bg-danger border-danger text-white">
+                  <i class="bi bi-at"></i>
+                </div>
+                <input type="email" class="form-control rounded-0 border-danger text-white bg-transparent"
+                  placeholder="EMAIL *" required>
+              </div>
+            </div>
+
+            <div class="col-12 py-5">
+              <div class="input-group">
+                <div class="input-group-text rounded-0 bg-danger border-danger text-white">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <textarea class="form-control rounded-0 border-danger text-white bg-transparent"
+                  placeholder="MEESAGE *" rows="5" required></textarea>
+              </div>
+            </div>
+
+            <div class="d-grid">
+              <button class="btn btn-outline-danger rounded-0 text-uppercase" type="submit">
+                  SEND MESSAGE
+              </button>
+            </div>
+
+          </form>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <table class="table border-0 d-flex h-100 flex-column justify-content-center">
+            <tbody>
+              <tr>
+                <td colspan="7" class="align-middle">
+                  <span class="text-light">Yeni Mah. 866 SK. No:9 Didim / AYDIN - Turkey</span>
+                </td>
+                <th scope="row" class="text-danger lead text-center">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 2rem;"></i>
+                </th>
+              </tr>
+              <tr>
+                <td colspan="7" class="align-middle">
+                  <span class="text-light">+90 535 076 80 38</span>
+                </td>
+                <th scope="row" class="text-danger lead text-center">
+                  <i class="bi bi-telephone-fill" style="font-size: 2rem;"></i>
+                </th>
+              </tr>
+
+              <tr>
+                <td class="align-middle"><span class="text-light"><i class="bi bi-facebook"></i></span></td>
+                <td class="align-middle"><span class="text-light"><i class="bi bi-twitter"></i></span></td>
+                <td class="align-middle"><span class="text-light"><i class="bi bi-youtube"></i></span></td>
+                <td class="align-middle"><span class="text-light"><i class="bi bi-linkedin"></i></span></td>
+                <td class="align-middle"><span class="text-light"><i class="bi bi-google"></i></span></td>
+                <td class="align-middle"><span class="text-light"><i class="bi bi-instagram"></i></span></td>
+                <td class="align-middle"><span class="text-light"><i class="bi bi-github"></i></span></td>
+                <th scope="row" class="text-danger lead text-center">
+                  <i class="bi bi-eye-fill" style="font-size: 2rem;"></i>
+                </th>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid bg-danger text-center py-4 lead text-light">
+      NO &copy; 2022 OLCAY YAZILIM
+      <a style="color: black;" href="#"><i class="bi bi-arrow-up-circle-fill" ></i>ÜSTE GİT</a>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+      </script>
 
 </body>
 
