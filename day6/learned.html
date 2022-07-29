@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      :root{
+        background-color: rgb(221, 221, 235);
+      }
+        div.ex1 {
+          background-color: red;
+          width: 110px;
+          height: 110px;
+          overflow: scroll;
+        }
+        
+        div.ex2 {
+          background-color: yellow;
+          width: 110px;
+          height: 110px;
+          overflow: hidden;
+        }
+        
+        div.ex3 {
+          background-color: lightblue;
+          width: 110px;
+          height: 110px;
+          overflow: auto;
+        }
+        
+        div.ex4 {
+          background-color: lightblue;
+          width: 110px;
+          height: 110px;
+          overflow: clip;
+        }
+        
+        div.ex5 {
+          background-color: lightblue;
+          width: 110px;
+          height: 110px;
+          overflow: visible;
+        }
+        .container #div1{
+          background-color: brown;
+        }
+        .container #div2{
+          background-color: rgb(16, 55, 163);
+        }
+        .mystyle {
+          width: 100%;
+          padding: 25px;
+          background-color: coral;
+          color: white;
+          font-size: 25px;
+          box-sizing: border-box;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>Today's learning Things</h1>
+<br>
+<p> 
+<h2><strong>1-overflow:</strong></h2> overflow özelliği, bir öğenin içeriğinin belirtilen bir alana 
+sığmayacak kadar büyük olması durumunda içeriğin kırpılıp 
+kırpılmayacağını veya kaydırma çubukları eklenip eklenmeyeceğini belirler. Yalnızca 
+belirli bir yüksekliğe sahip blok elemanları için çalışır.
+</p>
+<br>
+<h1>The overflow Property</h1>
+
+<p>The overflow property specifies whether to clip content or to add scrollbars when an element's 
+    content is too big to fit in a specified area.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>overflow: scroll:</h2>
+          <div class="ex1">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          </div>
+        </div>
+        <div class="col">
+          <h2>overflow: hidden:</h2>
+          <div class="ex2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+        </div>
+        <div class="col">
+          <h2>overflow: auto:</h2>
+          <div class="ex3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+        </div>
+        <div class="col">
+          <h2>overflow: clip:</h2>
+          <div class="ex4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+        </div>
+        <div class="col">
+          <h2>overflow: visible (default):</h2>
+          <div class="ex5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+        </div>
+      </div>
+      </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p> 
+  <h2><strong>2-> :root</strong></h2>
+  :root seçici, belgenin kök öğesiyle eşleşir. HTML'de kök öğe her zaman html öğesidir
+</p>
+<br>
+<br>
+<p>
+  <h2><strong>3-> preventdefault():</strong></h2>
+  Preventdefault kavramı ilgili elementin tarayıcı tarafından o an yaptığı varsayılan işlemi 
+  engellemeye yarar. Örneğin a elementine(google git) tıklandığı zaman varsayılan davranışı ilgili url 
+  adresine yönlenmektir bu davranışı engellemek için preventdefault kullanırız.
+    <a href="https://www.google.com/" id='google'>Google Git</a>
+</p>
+<p>
+  <h2><strong>4-> stopPropagation(): </strong></h2>
+    Stoppropagation kavramı ise tetiklenen olay zincirlerini keser.  Ne demek tetiklenen olay 
+    zincirlerini keser diyecek olursak, örneğin iç içe iki elementimizin oldugunu düşünelim şu şekilde 
+    mesela div 2 elementine tıkladığım zaman eğer div1 elementi için örn click eventi tanımlandıysa ilgili 
+    click eventi de tetiklenecektir peki biz bunu istiyor muyuz .Cevap tabikii hayır işte bunun için 
+    stoppropagation kavramını kullanarak ilgili olaylar zincirini koparabilir ve baloncuk etkisinden kurtulmuş oluruz.
+</p>
+<div class="container">
+  <div id="div1" onclick="div1click(event)">
+    Div 1
+    <div id='div2' onclick="div2click(event)">
+    Div 2
+    </div>
+    </div>
+</div>
+<br>
+<p>
+  <h2>
+    <strong>5-> addEventListener(): </strong>
+  </h2>
+  JavaScript addEventListener yöntemi, bir kullanıcı bir düğmeyi tıkladığında olduğu gibi, belirli bir olay 
+  gerçekleştiğinde çağrılacak işlevleri ayarlamanıza olanak tanır. Olaylar, kullanıcı veya tarayıcı bir sayfayı 
+  manipüle ettiğinde gerçekleşen eylemlerdir.
+</p>
+<p id="demo">Click anywhere in the document to display "Hello World!".</p>
+<br>
+<p>
+  <h2>
+    <strong>6-> getAttribute(): </strong>
+  </h2>
+  getAttribute() metodu, içerisine yazdığımız niteliğin ismine göre bize o niteliğin değerini veriyor. 
+  getAttribute() metodu IE ve tüm modern tarayıcılar tarafından desteklenir.
+  Span içerisinde strong olarak spanın class'ı democlass yazmasını bekliyorum ====>
+  <strong><span id="demo2" class="democlass" ></span></strong>
+</p>
+<br>
+<p>
+  <h2>
+    <strong>6-> scrollIntoView(): </strong>
+  </h2>
+  scrollIntoView() yöntemi, bir öğeyi tarayıcı penceresinin görünür alanına kaydırır. <br>
+    document.querySelector(href).scrollIntoView({ <br>
+        block: "end", <br>
+        behavior: "smooth", <br>
+        inline: "center" <br>
+    }); <br>
+</p>
+<br>
+<p>
+  <h2>
+    <strong>7-> toggle(): </strong>
+  </h2>
+  toggle() fonksiyonu show() ve hide() fonksiyonunun birleşimidir. İçeriğinizi, 
+  tıklandığında gizlemek ve tekrar tıklandığında göstermek için bu fonksiyonu kullanırız.
+</p>
+<p>Click the "Try it" button to toggle between adding and removing the "mystyle" class name of the DIV element:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+This is a DIV element.
+</div>
+
+
+<script>
+
+  const google=document.getElementById('google')
+  google.addEventListener('click',(e)=>{
+  e.preventDefault();
+  alert("Gidemezsin")
+  })
+
+
+  function div1click(event){
+  alert('div 1 tıklandı')
+  }
+  function div2click(event){
+  alert('div 2 tıklandı')
+  event.stopPropagation();
+  }
+
+  document.addEventListener("click", function(){
+    document.getElementById("demo").innerHTML = "Hello World!";
+  });
+
+  const element = document.getElementById("demo2"); 
+  let text = element.getAttribute("class"); 
+  document.getElementById("demo2").innerHTML = text;
+
+  function myFunction() {
+   var element = document.getElementById("myDIV");
+   element.classList.toggle("mystyle");
+}
+
+  </script>
+</body>
+</html>
+
+
