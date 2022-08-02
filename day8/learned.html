@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+   <h1>Learning Things About JavaScript</h1>
+
+
+    <h2>Spread Operator</h2>
+    <p>
+        JavaScript yayılma operatörü (...), mevcut bir dizinin veya nesnenin
+        tamamını veya bir kısmını başka bir dizi veya nesneye hızlı bir
+        şekilde kopyalamamızı sağlar.
+    </p>
+
+
+    <h2>The Compare Function</h2>
+    <p>
+        Karşılaştırma işlevinin amacı, alternatif bir sıralama düzeni tanımlamaktır.
+        Karşılaştırma işlevi, bağımsız değişkenlere bağlı olarak negatif, sıfır veya
+        pozitif bir değer döndürmelidir. function(a, b){return a - b}
+        sort() işlevi iki değeri karşılaştırdığında,
+        değerleri karşılaştırma işlevine gönderir ve değerleri döndürülen (negatif,
+        sıfır, pozitif) değere göre sıralar.Sonuç negatifse a, b'den önce sıralanır. Sonuç pozitifse, b, a'dan önce
+        sıralanır. Sonuç 0 ise, iki değerin sıralama düzeninde herhangi bir değişiklik
+        yapılmaz.
+    </p>
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort Numerically</button>
+    <p id="demo"></p>
+
+
+    <h2>JavaScript Forms</h2>
+    <p>
+        HTML form doğrulaması JavaScript ile yapılabilir.
+        Bir form alanı (fname) boşsa, bu işlev bir mesajı uyarır ve
+        formun gönderilmesini önlemek için false döndürür.
+    </p>
+    <p>Please input a number between 1 and 10:</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction3()">Submit</button>
+    <p id="demo"></p>
+
+
+    <h2>JavaScript Validation</h2>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit...">
+    </form>
+
+    <h1>JavaScript HTML DOM - Changing CSS</h1>
+    <h2 id="id1">My Heading 1</h2>
+
+    <button type="button" onclick="document.getElementById('id1').style.color = 'red'">
+        Click Me!</button>
+    
+
+    <h1>Create the Full Animation Using JavaScript</h1>
+    <p><button onclick="myMove()">Click Me</button></p>
+    
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    
+
+
+
+</body>
+
+</html> -->
