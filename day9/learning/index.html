@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+        .box{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            display: inline-block;
+
+            animation-name: myframes;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes myframes{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+                background-color: yellow;
+            }
+            0%{
+                height: 200px;
+            }
+            30%{
+                width: 300px;
+            }
+            100%{
+                height: 500px;
+                background-color: black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Css @keyFrames</h2>
+    <p>
+        CSS ile bir elemente animasyon uygulamak istediğinizde keyframes, 
+        elementinizin CSS özelliklerinin, animasyonun hangi aşamasında 
+        hangi değerleri alması gerektiğini belirtmenizi sağlar.
+    </p>
+    <p>
+        #element {
+            animation-name: animasyon_ismi;
+            animation-duration: 1s; /* Animasyonun süresi */
+            animation-iteration-count: 3; /* Tekrar sayısı */
+            animation-direction: alternate; /* Animasyonun yönü */
+            animation-timing-function: ease-out; /* Hareket eğrisi */
+            animation-fill-mode: forwards; /* Animasyon sonunda başlangıç (forwards)
+                                           ** ya da bitiş (backwards) değerleri
+                                           ** korunsun mu? */
+            animation-delay: .5s; /* Animasyon başlamadan önce ne kadar beklesin */
+           }
+            
+           /* Elbette tüm bu değerlerin ön ekleri ile de (en azından -webkit-)
+           ** belirtilmesi gereklidir. */
+    </p>
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>

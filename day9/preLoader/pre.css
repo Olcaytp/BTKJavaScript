@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: lightgrey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .disppear{
+    animation: vanish 0.5s forwards;
+  }
+  @keyframes vanish {
+    0%   { opacity: 1; }
+    30%  { opacity: .5;}
+    100% { opacity: 0; }
+  }

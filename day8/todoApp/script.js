@@ -28,6 +28,7 @@ const addTask = (e) =>{
         const del = confirm("Silmek istediğinize emin misiniz?");
         if(del == true){
             const parent = this.parentNode;
+            //console.log(parent);
             parent.remove();
         }
     })
