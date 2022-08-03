@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!--1st-->
+    <!-- <style>
         body{
             padding: 50px;
         }
@@ -41,10 +43,12 @@
             }
         }
 
-    </style>
+    </style> -->
 </head>
+
 <body>
-    <h2>Css @keyFrames</h2>
+    <!--1st-->
+    <!-- <h2>Css @keyFrames</h2>
     <p>
         CSS ile bir elemente animasyon uygulamak istediğinizde keyframes, 
         elementinizin CSS özelliklerinin, animasyonun hangi aşamasında 
@@ -69,7 +73,42 @@
 
     <div class="box">
 
+    </div> -->
+
+    <div class="controls">
+        <button id="reload" type="button">Reload</button>
     </div>
 
+    <div class="event-log">
+        <label for="eventLog">Event log:</label>
+        <textarea readonly class="event-log-contents" rows="8" cols="30" id="eventLog"></textarea>
+    </div>
+
+    <script>
+        const log = document.querySelector('.event-log-contents');
+        const reload = document.querySelector('#reload');
+
+        reload.addEventListener('click', () => {
+            log.textContent = 'dfdfdfdfd';
+            window.setTimeout(() => {
+                window.location.reload(true);
+            }, 2000);
+        });
+
+        window.addEventListener('load', (event) => {
+            log.textContent += 'load2\n';
+        });
+
+        document.addEventListener('readystatechange', (event) => {
+            log.textContent += `readystate2: ${document.readyState}\n`;
+        });
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            log.textContent += `DOMContentLoaded2\n`;
+        });
+
+    </script>
+
 </body>
+
 </html>
