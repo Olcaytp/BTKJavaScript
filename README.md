@@ -11,5 +11,8 @@ Bu alanda benim gibi çalışan herkese kolaylıklar diliyorum.İyi çalışmala
 8.günde yine Efe Dallı kardeşimizin todoApp projesini inceledim ve yine bu incelemelerimde güzel şeyler öğrendim.Kendisine teşekkürler.
 <br>
 9.günde js ile preloader projesi inceledim.Mantığını kavradım bunun yanı sıra css keyframes hakkında bilgi sahibi oldum.
+
+autotext projesiyle de otomatik yazma uygulamasını inceledim.
+
 window load eventini de inceleyerek çalşma mantığını keşfettim.
 <br>
